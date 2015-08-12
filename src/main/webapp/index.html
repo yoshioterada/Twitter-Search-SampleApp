@@ -40,7 +40,7 @@
             
 
             function connectServerEndpoint() {
-                var wsUri = "ws://yoshio3-jetty.azurewebsites.net/";
+                var wsUri = "ws://yoshio3-jetty.azurewebsites.net/twitter";
                 if ("WebSocket" in window) {
                     websocket = new WebSocket(wsUri);
                 } else if ("MozWebSocket" in window) {
