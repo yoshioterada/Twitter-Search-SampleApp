@@ -1,3 +1,3 @@
 [config]
-command = cp %DEPLOYMENT_SOURCE%\target\JavaEE6-SampleApp-1.0-SNAPSHOT.war %DEPLOYMENT_TARGET%/bin/jetty-*/webroot/ROOT.war
+command = cp %DEPLOYMENT_SOURCE%\target\JavaEE6-SampleApp-1.0-SNAPSHOT.war %DEPLOYMENT_TARGET%/webapps/ROOT.war
 
