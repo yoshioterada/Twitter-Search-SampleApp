@@ -19,7 +19,7 @@
 
             function init() {
                 numberOfMessage = 0;
-                document.getElementById("update").style.display = "none";
+
                 document.getElementById("close").style.display = "none";
             }
 
@@ -28,7 +28,7 @@
                 websocket.close(4001, "Close connection from client");
                 document.getElementById("connect").style.display = "block";
                 document.getElementById("close").style.display = "none";
-                document.getElementById("update").style.display = "none";
+
             }
             
             
@@ -59,7 +59,6 @@
                 };
                 document.getElementById("connect").style.display = "none";
                 document.getElementById("close").style.display = "block";
-                document.getElementById("update").style.display = "block";
 
     }
 
