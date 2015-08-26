@@ -19,7 +19,6 @@
 
             function init() {
                 numberOfMessage = 0;
-                document.getElementById("filter").style.display = "none";
                 document.getElementById("update").style.display = "none";
                 document.getElementById("close").style.display = "none";
             }
@@ -29,14 +28,9 @@
                 websocket.close(4001, "Close connection from client");
                 document.getElementById("connect").style.display = "block";
                 document.getElementById("close").style.display = "none";
-                document.getElementById("filter").style.display = "none";
                 document.getElementById("update").style.display = "none";
             }
             
-            function sendNewFilter() {
-                var filterString = document.getElementById("filter").value;
-                websocket.send(filterString);
-            }
             
 
             function connectServerEndpoint() {
@@ -65,7 +59,6 @@
                 };
                 document.getElementById("connect").style.display = "none";
                 document.getElementById("close").style.display = "block";
-                document.getElementById("filter").style.display = "block";
                 document.getElementById("update").style.display = "block";
 
     }
@@ -106,7 +99,6 @@
     <body>
         <h2>Twitter ツイート検索</h2>
         <input id="connect" type="button" value="Connect" onClick="connectServerEndpoint();">
-        <input id="filter" type="text" ><input id="update" type="button" value="フィルタ変更" onClick="sendNewFilter();"><BR> 
         <input id="close" type="button" value="DisConnect" onClick="closeServerEndpoint();">
         <br/>
         <TABLE BORDER="1" ID="TBL">            

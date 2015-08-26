@@ -22,7 +22,6 @@ public class TwitterEndpoint {
     TwitterStreamImpl twitter;
 
     @OnOpen
-
     public void onOpen(Session session) throws IOException {
         System.out.println("CONNECTED");
     }
