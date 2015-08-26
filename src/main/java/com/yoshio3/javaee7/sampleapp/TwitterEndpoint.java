@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.yoshio3.javaee6.sampleapp;
+package com.yoshio3.javaee7.sampleapp;
 
 import java.io.IOException;
 import javax.websocket.OnClose;

@@ -1,4 +1,4 @@
-package com.yoshio3.javaee6.sampleapp;
+package com.yoshio3.javaee7.sampleapp;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
